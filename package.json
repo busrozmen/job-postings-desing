@@ -1,0 +1,17 @@
+{
+  "name": "job-postings-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "bootstrap-icons": "^1.5.0",
+    "gulp-sass": "^4.1.0"
+  }
+}

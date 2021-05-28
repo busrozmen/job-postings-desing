@@ -1,0 +1,304 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+* {
+  font-family: 'PT Sans', sans-serif !important; }
+
+ol, ul {
+  list-style: none; }
+
+.navbar {
+  background: #005C97;
+  background: -webkit-linear-gradient(to right, #363795, #005C97);
+  background: linear-gradient(to right, #363795, #005C97);
+  padding: 1rem 1rem 2rem 1rem !important; }
+  .navbar .navbar-brand {
+    font-weight: 600;
+    color: #ffffff; }
+  .navbar .nav-link {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 0 .5rem; }
+  .navbar .nav-item.add-cv {
+    border-right: 1px solid #ffffff; }
+
+.search-wrapper {
+  background-color: #f3f3f3; }
+  .search-wrapper .input-group {
+    align-items: center; }
+    .search-wrapper .input-group .input-group-append {
+      display: block; }
+    .search-wrapper .input-group .search-btn {
+      padding: .375rem 3rem; }
+  .search-wrapper .search-icon {
+    border-top-left-radius: 50rem;
+    border-bottom-left-radius: 50rem;
+    padding: 0 5px 0 20px;
+    border-right-color: transparent !important;
+    background-color: #ffffff; }
+    .search-wrapper .search-icon:hover {
+      color: #212529; }
+  .search-wrapper .search-input {
+    border-top-right-radius: 50rem !important;
+    border-bottom-right-radius: 50rem !important;
+    border-left-color: transparent !important; }
+  .search-wrapper .detailed-search {
+    text-decoration: underline;
+    color: gray;
+    margin: auto; }
+
+.sorter-wrapper {
+  border-bottom: 1px solid #dee2e6; }
+  .sorter-wrapper .container > div {
+    padding: 20px; }
+  .sorter-wrapper .container .current-job-title {
+    margin: 5px auto 0;
+    color: #005C97; }
+  .sorter-wrapper .container .info-me {
+    margin: auto 0 auto auto; }
+
+section {
+  display: flex;
+  gap: 20px; }
+  section .sidebar {
+    flex: 1; }
+    section .sidebar .list-group {
+      height: 600px;
+      overflow-y: scroll; }
+  section .content {
+    flex: 2; }
+    section .content .job-title-wrapper {
+      display: flex;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      padding: 10px; }
+      section .content .job-title-wrapper .title {
+        flex: 1; }
+        section .content .job-title-wrapper .title h4 {
+          margin: auto 0;
+          color: #005C97;
+          padding-bottom: 5px; }
+      section .content .job-title-wrapper .apply-btn {
+        flex: 1;
+        text-align: right; }
+        section .content .job-title-wrapper .apply-btn .icons {
+          padding: .5rem 2rem;
+          color: #005C97; }
+    section .content .job-content-wrapper .nav-tabs {
+      border-bottom: 0; }
+      section .content .job-content-wrapper .nav-tabs .nav-item {
+        border-right: 1px solid #dee2e6;
+        border-bottom: 1px solid #dee2e6; }
+        section .content .job-content-wrapper .nav-tabs .nav-item:last-child {
+          border-right: 0; }
+        section .content .job-content-wrapper .nav-tabs .nav-item .nav-link {
+          border: 0;
+          background-color: #ffffff; }
+          section .content .job-content-wrapper .nav-tabs .nav-item .nav-link.active {
+            border-bottom: 1px solid #005C97;
+            color: #005C97; }
+    section .content .job-content-wrapper .tab-content {
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      padding: 10px;
+      height: 450px;
+      overflow-y: scroll; }
+      section .content .job-content-wrapper .tab-content .general-qualifications ul {
+        list-style: inside; }
+  section .profile-sidebar {
+    flex: 1; }
+    section .profile-sidebar .bi-file-person {
+      font-size: 200px; }
+    section .profile-sidebar h4 {
+      color: #005C97;
+      padding: 10px 0;
+      font-weight: 600; }
+    section .profile-sidebar p {
+      color: #696b6d; }
+    section .profile-sidebar .btn-outline-secondary.active {
+      background-color: #005C97 !important;
+      border-color: #005C97 !important; }
+  section .profile-content {
+    flex: 2; }
+    section .profile-content h3 {
+      color: #005C97;
+      padding: 10px 0;
+      font-size: 25px;
+      border-bottom: 1px solid #dee2e6; }
+    section .profile-content .form-group {
+      margin-bottom: 2rem; }
+      section .profile-content .form-group label {
+        padding: 0 0 2px 25px;
+        font-weight: bold; }
+      section .profile-content .form-group input {
+        padding: .375rem 1.5rem; }
+  section .profile-info .profile-info-head {
+    border-bottom: 1px solid #dee2e6; }
+    section .profile-info .profile-info-head .bi-file-person {
+      font-size: 100px; }
+    section .profile-info .profile-info-head h4 {
+      color: #005C97;
+      font-weight: 600;
+      font-size: 20px; }
+    section .profile-info .profile-info-head h6 {
+      color: #696b6d;
+      padding: 2px 0; }
+    section .profile-info .profile-info-head p {
+      color: #929292;
+      margin: .3rem; }
+    section .profile-info .profile-info-head a {
+      text-decoration: underline;
+      color: #005C97; }
+  section .profile-info .cv-docs {
+    color: #696b6d; }
+    section .profile-info .cv-docs .bi-x {
+      float: right; }
+    section .profile-info .cv-docs a {
+      text-decoration: underline;
+      color: #005C97; }
+  section .profile-info .profile-detail h4 {
+    color: #005C97;
+    font-size: 25px;
+    border-bottom: 1px solid #dee2e6; }
+  section .profile-info .profile-detail .detail-wrapper h5 {
+    color: #005C97;
+    padding: 1rem 0 .5rem 0;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #dee2e6; }
+    section .profile-info .profile-detail .detail-wrapper h5 span {
+      font-weight: 500;
+      float: right;
+      font-size: 15px; }
+  section .profile-info .profile-detail .detail-wrapper p {
+    margin: 5px 0 0 0;
+    color: #696b6d;
+    font-weight: 600; }
+    section .profile-info .profile-detail .detail-wrapper p.desc {
+      margin-top: 10px;
+      font-weight: 500; }
+  section .profile-info .profile-detail .detail-wrapper h6 {
+    padding-top: 5px;
+    color: #005C97; }
+    section .profile-info .profile-detail .detail-wrapper h6:last-child {
+      padding-top: 5px; }
+
+footer {
+  background-color: #f3f3f3;
+  color: #403c3c;
+  padding: 1rem; }
+  footer p {
+    font-weight: 600;
+    text-align: center; }
+  footer .footer-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+@media only screen and (max-width: 992px) {
+  .navbar-collapse {
+    flex-direction: row;
+    display: flex; }
+    .navbar-collapse .navbar-nav {
+      flex-direction: row; } }
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 1rem !important; }
+    .navbar .nav-item {
+      padding: 5px; }
+      .navbar .nav-item.mobile-header-title {
+        font-weight: 600; }
+      .navbar .nav-item.add-cv {
+        border-right: 0; }
+      .navbar .nav-item.login {
+        border: 1px solid #ffffff;
+        border-radius: 50px; }
+  .search-wrapper .container {
+    padding: 0; }
+    .search-wrapper .container .search-btn {
+      position: absolute;
+      padding: .375rem 1rem;
+      right: 0;
+      margin: 0 !important; }
+    .search-wrapper .container .search-input {
+      font-size: 12px;
+      padding: 1.1rem .75rem; }
+  section {
+    flex-direction: column; }
+    section .current-job-title {
+      color: #005C97; }
+      section .current-job-title .bi-filter {
+        font-size: 45px; }
+    section .sidebar .list-group {
+      height: 100%;
+      overflow-y: unset; }
+      section .sidebar .list-group-item {
+        display: flex;
+        align-items: center;
+        margin: 5px;
+        border-radius: 10px; }
+        section .sidebar .list-group-item.active {
+          background-color: #ffffff;
+          border-color: #dee2e6;
+          color: #212529; }
+        section .sidebar .list-group-item h4 {
+          color: #005C97;
+          padding: 10px 0; }
+        section .sidebar .list-group-item h6 {
+          display: inline-block; }
+        section .sidebar .list-group-item .apply-job {
+          height: 40px;
+          margin: auto 0 auto auto !important; }
+    section .content .job-title-wrapper .title h4 {
+      font-size: 20px; }
+    section .content .job-content-wrapper .nav-tabs {
+      font-size: 18px;
+      overflow-x: scroll;
+      white-space: nowrap;
+      display: block; }
+      section .content .job-content-wrapper .nav-tabs .nav-item {
+        display: inline-block;
+        border-bottom: 0;
+        padding: 0 5px; }
+    section .content .job-content-wrapper .tab-content {
+      border: 0;
+      height: 100%;
+      overflow-y: unset; }
+    section .content .relevance-wrapper, section .content .salary-wrapper {
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      color: #929292; }
+      section .content .relevance-wrapper h4, section .content .salary-wrapper h4 {
+        color: #005C97;
+        padding: 10px 0;
+        font-size: 20px; }
+      section .content .relevance-wrapper h6:last-child, section .content .salary-wrapper h6:last-child {
+        text-decoration: underline;
+        color: #696b6d; }
+      section .content .relevance-wrapper div:last-child, section .content .salary-wrapper div:last-child {
+        overflow: unset;
+        margin: auto 0 auto auto !important; }
+      section .content .relevance-wrapper i, section .content .salary-wrapper i {
+        font-size: 50px; } }

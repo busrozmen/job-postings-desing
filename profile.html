@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Postings</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-none d-sm-block" href="/index.html">Company Logo</a>
+        <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link mobile-header-title" href="#">İşveren Girişi</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav my-2 my-lg-0">
+            <li class="nav-item add-cv">
+              <a class="nav-link" href="#">CV Yükle</a>
+            </li>
+            <li class="nav-item login">
+              <a class="nav-link" href="#">Giriş Yap</a>
+            </li>
+            <li class="nav-item dropdown d-none d-sm-block">
+              <a class="nav-link dropdown-toggle" href="#" id="languageOption" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Türkçe
+              </a>
+              <div class="dropdown-menu" aria-labelledby="languageOption">
+                <a class="dropdown-item" href="#">İngilizce</a>
+                <a class="dropdown-item" href="#">Fransızca</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <form class="form-inline search-wrapper p-4">
+      <div class="container">
+        <div class="input-group">
+          <span class="input-group-append">
+            <button class="btn-outline-secondary border-start-0 border ms-n3 search-icon p-2" type="button">
+              <i class="bi-search"><span class="p-2">İş Ara</span></i>
+            </button>
+          </span>
+          <input class="form-control border-end-0 border search-input" type="text"
+            placeholder="İş, Şirket, Anahtar Kelime" id="example-search-input">
+          <button class="btn btn-outline-primary rounded-pill font-weight-bold m-2 search-btn"
+            type="submit">ARA</button>
+          <span class="detailed-search pr-3 pl-3 d-none d-sm-block">Detaylı Arama</span>
+        </div>
+      </div>
+    </form>
+  </header>
+  <section class="container mt-4">
+    <div class="profile-sidebar d-none d-sm-block">
+      <div class="btn-group-vertical">
+        <i class="bi-file-person"></i>
+        <h4>Büşra Özmen</h4>
+        <p>busra.ozmen@eposta.com</p>
+        <button type="button" class="btn btn-outline-secondary rounded-pill mt-3 pr-5 pl-5 active">İletişim
+          Bilgileri</button>
+        <button type="button" class="btn btn-outline-secondary rounded-pill mt-2 pr-5 pl-5">Profesyonel Bakış</button>
+        <button type="button" class="btn btn-outline-secondary rounded-pill mt-2 pr-5 pl-5">Deneyim</button>
+        <button type="button" class="btn btn-outline-secondary rounded-pill mt-2 pr-5 pl-5">Eğitim</button>
+        <button type="button" class="btn btn-outline-secondary rounded-pill mt-2 pr-5 pl-5">Sertifikalar</button>
+        <button type="button" class="btn btn-outline-secondary rounded-pill mt-2 pr-5 pl-5">Yetenekler</button>
+        <button type="button" class="btn btn-outline-secondary rounded-pill mt-2 pr-5 pl-5">İlgi Alanları</button>
+      </div>
+    </div>
+    <div class="profile-content d-none d-sm-block">
+      <h3>İletişim Bilgileri</h3>
+      <form class="mt-4">
+        <div class="form-group">
+          <label for="inputAddress">İsim</label>
+          <input type="text" class="form-control rounded-pill" id="inputName" placeholder="Büşra">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Soyisim</label>
+          <input type="text" class="form-control rounded-pill" id="inputLastName" placeholder="Özmen">
+        </div>
+        <div class="form-group">
+          <label for="inputCity">E-mail Adres</label>
+          <input type="text" class="form-control rounded-pill" id="inputEmail" placeholder="busra.ozmen@eposta.com">
+        </div>
+        <div class="form-group">
+          <label for="inputZip">Telefon</label>
+          <input type="phone" class="form-control rounded-pill" id="inputPhone" placeholder="5555555555">
+        </div>
+        <div class="form-group">
+          <label for="inputCountry">Ülke</label>
+          <select id="inputCountry" class="form-control rounded-pill">
+            <option selected>Türkiye</option>
+            <option>Amerika</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="cityState">Şehir</label>
+          <select id="cityState" class="form-control rounded-pill">
+            <option selected>İstanbul</option>
+            <option>Bursa</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="inputCity">Post Kodu</label>
+          <input type="text" class="form-control rounded-pill" id="inputPost" placeholder="12345">
+        </div>
+        <div class="form-group">
+          <label for="inputCareer">Kariyer Seviyesi</label>
+          <select id="inputCareer" class="form-control rounded-pill">
+            <option selected>Uzman</option>
+            <option>Başlangıç</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="inputEducation">Eğitim Seviyesi</label>
+          <select id="inputEducation" class="form-control rounded-pill">
+            <option selected>Yüksek Lisans</option>
+            <option>Orta Öğretim</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary rounded-pill font-weight-bold m-2 pr-4 pl-4 w-100">Kaydet</button>
+      </form>
+
+    </div>
+    <div class="profile-info pb-5 d-block d-sm-none">
+      <div class="profile-info-head text-center pb-3">
+        <i class="bi-file-person"></i>
+        <h4>Büşra Özmen</h4>
+        <h6>XXX şirketinde Frontend Developer</h6>
+        <h6>Türkiye,İstanbul</h6>
+        <p>busra.ozmen@eposta.com</p>
+        <p>+90555555555</p>
+        <a href="#">Profili düzenle</a>
+      </div>
+      <div class="cv-docs pt-3">
+        <p><i class="bi-file-earmark-fill"></i>cv.docx <i class="bi-x"></i></p>
+        <p><i class="bi-file-earmark-pdf-fill"></i>cv.pdf <i class="bi-x"></i></p>
+        <p><i class="bi-file-earmark-pdf-fill"></i>cv-eng.pdf <i class="bi-x"></i></p>
+        <a href="#">Başka bir döküman ekle</a>
+      </div>
+      <div class="profile-detail mt-4">
+        <h4>Profil</h4>
+        <div class="detail-wrapper">
+          <h5>Profesyonel Bakış<span>Düzenle</span></h5>
+          <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="detail-wrapper">
+          <h5>Deneyim<span>Düzenle</span></h5>
+          <h6>Frontend Developer</h6>
+          <h6>XXX şirketi</h6>
+          <p>Ocak 2016 - Mart 2017</p>
+          <p>İstanbul, Türkiye</p>
+          <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. </p>
+        </div>
+        <div class="detail-wrapper">
+          <h5>Eğitim<span>Düzenle</span></h5>
+          <h6>Anadolu Üniversitesi</h6>
+          <p>Master Degree</p>
+          <p>Bilgisayar Mühendisi</p>
+          <p>2015-2018</p>
+        </div>
+        <div class="detail-wrapper">
+          <h5>Sertifikalar<span>Düzenle</span></h5>
+          <h6>MCP</h6>
+          <p>Microsoft</p>
+          <p>January 2015</p>
+        </div>
+        <div class="detail-wrapper">
+          <h5>Yetenekler<span>Düzenle</span></h5>
+          <p>React</p>
+          <p>Vue</p>
+          <p>Angular</p>
+        </div>
+        <div class="detail-wrapper">
+          <h5>İlgi Alanları<span>Düzenle</span></h5>
+          <p>Swimming</p>
+          <p>Boating</p>
+          <p>Snowboarding</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>*2020 Company Logo</p>
+      <ul class="footer-items">
+      <li>Hakkımızda</li>
+      <li>Yardım Merkezi</li>
+      <li>Gizlilik Merkezi</li>
+      <li>Çerezler</li>
+      <li>Gizlilik</li>
+      <li>Şartlar</li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
